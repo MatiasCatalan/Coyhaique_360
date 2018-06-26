@@ -11,6 +11,9 @@ import javax.servlet.ServletException;
 import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
+import Clase.*;
+
+
 
 /**
  *
@@ -30,19 +33,78 @@ public class Servlet_CC extends HttpServlet {
     protected void processRequest(HttpServletRequest request, HttpServletResponse response)
             throws ServletException, IOException {
         response.setContentType("text/html;charset=UTF-8");
-        try (PrintWriter out = response.getWriter()) {
+          try (PrintWriter out = response.getWriter()) {
             /* TODO output your page here. You may use following sample code. */
-            out.println("<!DOCTYPE html>");
-            out.println("<html>");
-            out.println("<head>");
-            out.println("<title>Servlet Servlet_CC</title>");            
-            out.println("</head>");
-            out.println("<body>");
-            out.println("<h1>Servlet Servlet_CC at " + request.getContextPath() + "</h1>");
-            out.println("</body>");
-            out.println("</html>");
+            
+            String accion = request.getParameter("accion");
+            if(accion.equals("insertar")){
+                this.RegistrarClaseCancha(request, response);
+            }
+            if(accion.equals("actualizar")){
+                this.ActualizarClaseCancha(request, response); 
+            }
+            if(accion.equals("eliminar")){
+                this.EliminarClaseCancha(request, response); 
+            }
+            if(accion.equals("recuperar")){
+                this.RecuperarClaseCancha(request, response); 
+            }
+            
         }
     }
+              private void RegistrarClaseCancha(HttpServletRequest request, HttpServletResponse response)
+            throws ServletException, IOException{
+        ClaseC cc = new ClaseC();
+        cc.setNombreCC(request.getParameter("txtNombre")); 
+        
+        boolean resp = ClaseC_DB.insertarClaseCancha(cc);
+        if(resp){
+            response.sendRedirect("mensaje.jsp?mens='Se ha registrado una Clase de Cancha correctamente'");
+        }else{
+            response.sendRedirect("mensaje.jsp?mens='Error al registrar una Clase de Cancha'"); 
+        }
+    }
+    
+    private void ActualizarClaseCancha(HttpServletRequest request, HttpServletResponse response)
+            throws ServletException, IOException{
+        ClaseC cc = new ClaseC();
+        cc.setCodigoCC(request.getParameter("txtCodigo"));
+        cc.setNombreCC(request.getParameter("txtNombre")); 
+        
+        boolean resp = ClaseC_DB.actualizarClaseCancha(cc);
+        if(resp){
+            response.sendRedirect("mensaje.jsp?mens='Se ha modificado la clase Cancha "+cc.getCodigoCC()+"'");
+        }else{
+            response.sendRedirect("mensaje.jsp?mens='Error al actualizar la clase Cancha'");
+        }
+    }
+    
+    private void EliminarClaseCancha(HttpServletRequest request, HttpServletResponse response)
+            throws ServletException, IOException{
+        ClaseC cc = new ClaseC();
+        cc.setCodigoCC(request.getParameter("codigoCC"));
+        
+        boolean resp = ClaseC_DB.darBajaClaseCancha(cc);
+        if(resp){
+            response.sendRedirect("mensaje.jsp?mens='Se ha eliminado la clase Cancha "+cc.getCodigoCC()+"'");
+        }else{
+            response.sendRedirect("mensaje.jsp?mens='Error al eliminar la clase Cancha'");
+        }
+    }
+    
+    private void RecuperarClaseCancha(HttpServletRequest request, HttpServletResponse response)
+            throws ServletException, IOException{
+        ClaseC cc = new ClaseC();
+        cc.setCodigoCC(request.getParameter("codigoCC"));
+        
+        boolean resp = ClaseC_DB.darAltaClaseCancha(cc);
+        if(resp){
+            response.sendRedirect("mensaje.jsp?mens='Se ha recuperado la clase Cancha "+cc.getCodigoCC()+"'");
+        }else{
+            response.sendRedirect("mensaje.jsp?mens='Error al recuperar la clase Cancha'");
+        }
+    }
+    
 
     // <editor-fold defaultstate="collapsed" desc="HttpServlet methods. Click on the + sign on the left to edit the code.">
     /**

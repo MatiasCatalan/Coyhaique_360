@@ -5,7 +5,6 @@
  */
 package Clase;
 
-import Conexion.Conexion;
 import java.sql.CallableStatement;
 import java.sql.Connection;
 import java.sql.ResultSet;
@@ -31,7 +30,7 @@ public class Cancha_DB {
                     cs=cn.prepareCall("CALL MOSTRAR_CANCHAS_HABILITADAS");
                     rs=cs.executeQuery();
                     while(rs.next()){
-                        Cancha c = new Cancha(rs.getString("Codigo_C"), rs.getString("Clase_C"), rs.getString("Marca_C"), rs.getString("Descripcion_C"), rs.getDouble("Precio_C"), rs.getString("Imagen_C"), rs.getString("Estado_C"));
+                        Cancha c = new Cancha(rs.getString("Codigo_C"), rs.getString("Clase_C"), rs.getString("Suelo_C"), rs.getString("Descripcion_C"), rs.getDouble("Precio_C"), rs.getString("Imagen_C"), rs.getString("Estado_C"));
                         lista.add(c);
                     }
 

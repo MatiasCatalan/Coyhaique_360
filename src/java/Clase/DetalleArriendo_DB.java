@@ -4,21 +4,15 @@
  * and open the template in the editor.
  */
 package Clase;
-
 import Conexion.Conexion;
-import java.sql.CallableStatement;
-import java.sql.Connection;
-import java.sql.ResultSet;
-import java.util.ArrayList;
-import Conexion.Conexion;
-
+import java.sql.*;
+import java.util.*;
 /**
  *
- * @author Luis Carcamo
+ * @author Luis Carcamo Espinoza
  */
 public class DetalleArriendo_DB {
-    
-        public static ArrayList<DetalleArriendo> obtenerDetalleArriendo(String CodigoArriendo){
+    public static ArrayList<DetalleArriendo> obtenerDetalleArriendo(String CodigoArriendo){
         ArrayList<DetalleArriendo> lista = new ArrayList<DetalleArriendo>();
         
         Connection cn;
@@ -42,5 +36,4 @@ public class DetalleArriendo_DB {
         }catch(Exception e){System.out.println(e);}
         return lista;
     }
-    
 }

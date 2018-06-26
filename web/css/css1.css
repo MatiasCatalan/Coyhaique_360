@@ -1,0 +1,874 @@
+body{
+    background-color:  #FFFFFF;
+}
+
+/* Login */
+
+#tablaLogin{
+    margin: auto;
+}
+
+#btnIngresar{
+    background-color: #D8D8D8; 
+    color: #000000;
+    width: 100px;
+    border-color: #FFFFFF;
+    padding: 3px 2px 2px 2px;
+}
+
+#btnIngresar:hover{
+    cursor: pointer;
+}
+
+#lnkRegistrarUsuario{
+    text-align: right;
+    color: #0035B0;
+}
+
+.campoSinFoco{
+    background:   #FFFFFF;
+    border: 1px solid #000000;
+}
+.campoConFoco{
+    background: #F6F200;
+    border: 1px solid #000000;
+}
+
+
+/* Registrar usuario */
+
+.primeraColumna{
+    text-align: right;
+}
+
+
+
+#tablaRegistrarUsuario{
+    margin: auto;
+}
+
+#btnCancelar{
+
+}
+
+#btnRegistrar{
+    width: 100px;
+    background-color: #011490;
+    border-color: #011490;
+    color: #FFFFFF;
+    padding: 3px 2px 2px 2px;
+}
+
+.Botones{
+    text-align: center;
+}
+
+.button:hover{
+    cursor: pointer;
+}
+
+
+/* Catalogo */
+
+#frmCabecera{
+    background-color: white;
+}
+
+#tablaCabecera{
+    margin: inherit
+}
+
+#tablaCatalogo{
+    margin: auto;
+}
+
+.link{
+    color: #000000;
+    font-weight: lighter;
+    font-size: 15px;
+}
+
+.BotonModificar{
+    background-color: #FFCE29;
+    color: #000000;
+    width: 90px;
+    border-color: #FFCE29;
+    padding: 3px 2px 2px 2px;
+}
+
+.BotonADD{
+    background-color: #D8D8D8; 
+    color: #000000;
+    width: 100px;
+    border-color: #FFFFFF;
+    padding: 3px 2px 2px 2px;
+}
+
+.BotonModificar:hover{
+    cursor: pointer;
+}
+
+.BotonADD:hover{
+    cursor: pointer;
+}
+
+
+/* Menu administrador */
+
+#tablaAdministrador{
+    margin: auto;
+    width: 1000px;
+    border-style: solid;
+    border-color:  #000000;
+    border-collapse:  collapse;
+}
+
+#tablaAdministrador th{
+    font-size: 20px;
+    font-weight: bold;
+    color: #000000;
+}
+
+#tablaAdministrador th{
+    border-style: solid;
+    border-color: #000000;
+    border-collapse: collapse;
+}
+
+#tablaAdministrador td{
+    text-align: center;
+    border-style: solid;
+    border-color: #000000;
+    border-collapse: collapse;
+}
+
+
+/* Registrar Clase producto */
+
+#frmRegistrarCP{
+    background-color: #D2E960;
+}
+
+#tablaRegistrarCP{
+    margin: auto;
+}
+
+
+/* Registrar Marca producto */
+
+#frmRegistrarMP{
+    background-color: #D2E960;
+}
+
+#tablaRegistrarMP{
+    margin: auto;
+}
+
+
+/* Registrar producto */
+
+#frmRegistrarProd{
+    background-color: #82F7F2;
+}
+
+#tablaRegistrarProd{
+    margin: auto;
+}
+
+
+/* Mostrar clase producto */
+
+
+
+#frmMostrarCabeceraCP{
+    background-color: #82F7F2;
+}
+
+#tablaMostrarCabeceraCP{
+    margin: auto;
+}
+
+#tablaMostrarCabeceraCP td{
+    text-align: center;
+}
+
+#tablaMostrarCuerpoCP{
+    margin: auto;
+    width: 50%;
+    border: 2px solid #000000;
+    border-collapse: collapse;
+}
+
+#tablaMostrarCuerpoCP td{
+    border: 2px solid #000000;
+    text-align: center;
+}
+
+#tablaMostrarCuerpoCP th{
+    font-size: 18px;
+    font-weight: bold;
+    border: 2px solid #000000;
+}
+
+.Opcion{
+    width: 5%;
+}
+
+#btnModificar{
+    background-color: #FFCE29;
+    color: #000000;
+    width: 90px;
+    border-color: #FFCE29;
+    padding: 3px 2px 2px 2px;
+}
+
+#btnEliminar{
+    background-color: #F21400;
+    color: #FFFFFF;
+    width: 90px;
+    border-color: #F21400;
+    padding: 3px 2px 2px 2px;
+}
+
+
+/* Mostrar marca producto */
+
+#frmMostrarCabeceraMP{
+    background-color: #82F7F2;
+}
+
+#tablaMostrarCabeceraMP{
+    margin: auto;
+}
+
+#tablaMostrarCabeceraMP td{
+    text-align: center;
+}
+
+#tablaMostrarCuerpoMP{
+    margin: auto;
+    width: 50%;
+    border: 2px solid #000000;
+    border-collapse: collapse;
+}
+
+#tablaMostrarCuerpoMP th{
+    border: 2px solid #000000;
+    font-size: 18px;
+    font-weight: bold;
+}
+
+#tablaMostrarCuerpoMP td{
+    border: 2px solid #000000;
+    text-align: center;
+}
+
+
+/* Mostrar productos */
+
+
+
+#tablaMostrarCabeceraProd{
+    margin: auto;
+}
+
+#tablaMostrarCabeceraProd td{
+    text-align: center;
+}
+
+#tablaMostrarCuerpoProd{
+    margin: auto;
+    width: 95%;
+    border: 2px solid #000000;
+    border-collapse: collapse;
+}
+
+#tablaMostrarCuerpoProd th{
+    border: 2px solid #000000;
+    font-size: 18px;
+    font-weight: bold;
+}
+
+#tablaMostrarCuerpoProd td{
+    border: 2px solid #000000;
+    text-align: center;
+}
+
+
+/* Mostrar clase productos eliminados */
+
+#btnRecuperar{
+    background-color: #FFF300;
+    color: #000000;
+    width: 100px;
+    border-color: #FFF300;
+    padding: 3px 2px 2px 2px;
+}
+
+#frmMostrarCabeceraCPEliminados{
+    background-color: #FFC530;
+}
+
+#tablaMostrarCabeceraCPEliminados{
+    margin: auto;
+}
+
+#tablaMostrarCabeceraCPEliminados td{
+    text-align: center;
+}
+
+#tablaMostrarCuerpoCPEliminados{
+    margin: auto;
+    width: 50%;
+    border: 2px solid #000000;
+    border-collapse: collapse;
+}
+
+#tablaMostrarCuerpoCPEliminados th{
+    border: 2px solid #000000;
+    font-size: 18px;
+    font-weight: bold;
+}
+
+#tablaMostrarCuerpoCPEliminados td{
+    border: 2px solid #000000;
+    text-align: center;
+}
+
+
+/* Mostrar marca productos eliminados */
+
+#frmMostrarCabeceraMPEliminados{
+    background-color: #FFC530;
+}
+
+#tablaMostrarCabeceraMPEliminados{
+    margin: auto;
+}
+
+#tablaMostrarCabeceraMPEliminados td{
+    text-align: center;
+}
+
+#tablaMostrarCuerpoMPEliminados{
+    margin: auto;
+    width: 50%;
+    border: 2px solid #000000;
+    border-collapse: collapse;
+}
+
+#tablaMostrarCuerpoMPEliminados th{
+    border: 2px solid #000000;
+    font-size: 18px;
+    font-weight: bold;
+}
+
+#tablaMostrarCuerpoMPEliminados td{
+    border: 2px solid #000000;
+    text-align: center;
+}
+
+
+/* Mostrar productos eliminados */
+
+#frmMostrarCabeceraProdEliminados{
+    background-color: #FFC530;
+}
+
+#tablaMostrarCabeceraProdEliminados{
+    margin: auto;
+}
+
+#tablaMostrarCabeceraProdEliminados td{
+    text-align: center;
+}
+
+#tablaMostrarCuerpoProdEliminados{
+    margin: auto;
+    width: 95%;
+    border: 2px solid #000000;
+    border-collapse: collapse;
+}
+
+#tablaMostrarCuerpoProdEliminados th{
+    border: 2px solid #000000;
+    font-size: 18px;
+    font-weight: bold;
+}
+
+#tablaMostrarCuerpoProdEliminados td{
+    border: 2px solid #000000;
+    text-align: center;
+}
+
+
+/* Mostrar ventas */
+
+#btnDetalle{
+    background-color: #E3D800;
+    color: #000000;
+    width: 100px;
+    border-color: #E3D800;
+    padding: 3px 2px 2px 2px;
+}
+
+#frmMostrarCabeceraVenta{
+    background-color: #3EEA00;
+}
+
+#tablaMostrarCabeceraVenta{
+    margin: auto;
+}
+
+#tablaMostrarCabeceraVenta td{
+    text-align: center;
+}
+
+#tablaMostrarCuerpoVenta{
+    margin: auto;
+    width: 70%;
+    border: 2px solid #000000;
+    border-collapse: collapse;
+}
+
+#tablaMostrarCuerpoVenta th{
+    border: 2px solid #000000;
+    font-size: 18px;
+    font-weight: bold;
+}
+
+#tablaMostrarCuerpoVenta td{
+    border: 2px solid #000000;
+    text-align: center;
+}
+
+
+/* Mostrar detalle venta */
+
+#tablaRegresar{
+    margin: auto;
+}
+
+#frmMostrarDetalleVenta{
+    background-color: #D2E960;
+}
+
+#tablaMostrarDetalleVenta{
+    margin: auto;
+    width: 70%;
+    border: 2px solid #000000;
+    border-collapse: collapse;
+}
+
+#tablaMostrarDetalleVenta th{
+    border: 2px solid #000000;
+    font-size: 18px;
+    font-weight: bold;
+}
+#tablaMostrarDetalleVenta td{
+    border: 2px solid #000000;
+    text-align: center;
+}
+
+#tablaMostrarDetalleVenta div{
+    text-align: right;
+}
+
+.TituloDV{
+    background-color: #BDBDBD;
+}
+
+.FilaEnBlanco{
+    background-color: #CCCCCD;
+}
+
+.Contenido{
+    background-color: #FFFFFF;
+}
+
+#frmMostrarDatosCliente{
+    background-color: #ACEEFE;
+}
+
+#tablaMostrarDatosCliente{
+    margin: auto;
+}
+
+
+/* Modificar usuario */
+
+#frmModificarUsuario{
+    background-color: #ffffff;
+}
+
+#tablaModificarUsuario{
+    margin: auto;
+}
+
+.Enlace{
+    font-size: 14px;
+    color: #D11B03;
+}
+
+#btnGuardar{
+    
+}
+
+
+/* Modificar email del usuario */
+
+#frmModificarEmail{
+    background-color: #D2E960;
+}
+
+#tablaModificarEmail{
+    margin: auto;
+}
+
+
+/* Modificar contraseña del usuario */
+
+#frmModificarClave{
+    background-color: #D2E960;
+}
+
+#tablaModificarClave{
+    margin: auto;
+}
+
+
+/* Añadir a carrito */
+
+
+
+#tablaAnadirCarrito{
+    margin: auto;
+}
+
+
+/* Registrar venta */
+
+#frmRegistrarVenta{
+   
+}
+
+#tablaRegistrarVenta{
+    margin: auto;
+    width: 85%;
+    border: 2px solid #000000;
+    border-collapse: collapse;
+}
+
+#tablaRegistrarVenta th{
+    border: 2px solid #000000;
+    font-size: 18px;
+    font-weight: bold;
+}
+
+#tablaRegistrarVenta td{
+    border: 2px solid #000000;
+    text-align: center;
+}
+
+#tablaRegistrarVenta div{
+    text-align: right;
+}
+
+#btnRegistrarVenta{
+    background-image: linear-gradient(to right, #2992aa, #29c966);
+    color: #000000;
+    width: 150px;
+    border-color: #000000;
+    padding: 4px 3px 3px 3px;
+}
+
+
+/* Modificar CP */
+
+#frmModificarCP{
+    background-color: #3CC5CC;
+}
+
+#tablaModificarCP{
+    margin: auto;
+}
+
+
+/* Modificar MP */
+
+#frmModificarMP{
+    background-color: #3CC5CC;
+}
+
+#tablaModificarMP{
+    margin: auto;
+}
+
+
+/* Modificar producto */
+
+#frmModificarProd{
+    background-color: #D2E960;
+}
+
+#tablaModificarProd{
+    margin: auto;
+}
+
+
+/* Mostrar Usuario Habilitados */
+
+
+#tablaMostrarCabeceraUsuario{
+    margin: auto;
+}
+
+#tablaMostrarCabeceraUsuario td{
+    text-align: center;
+}
+
+#tablaMostrarCuerpoUsuario{
+    margin: auto;
+    width: 85%;
+    border: 2px solid #000000;
+    border-collapse: collapse;
+}
+
+#tablaMostrarCuerpoUsuario th{
+    border: 2px solid #000000;
+    font-size: 18px;
+    font-weight: bold;
+}
+
+#tablaMostrarCuerpoUsuario td{
+    border: 2px solid #000000;
+    text-align: center;
+}
+
+
+/* Mostrar Usuarios Eliminados */
+
+#frmMostrarCabeceraUsuarioEliminados{
+    background-color: #FFC530;
+}
+
+#tablaMostrarCabeceraUsuarioEliminados{
+    margin: auto;
+}
+
+#tablaMostrarCabeceraUsuarioEliminados td{
+    text-align: center;
+}
+
+#tablaMostrarCuerpoUsuarioEliminados{
+    margin: auto;
+    width: 80%;
+    border: 2px solid #000000;
+    border-collapse: collapse;
+}
+
+#tablaMostrarCuerpoUsuarioEliminados th{
+    border: 2px solid #000000;
+    font-size: 18px;
+    font-weight: bold;
+}
+
+#tablaMostrarCuerpoUsuarioEliminados td{
+    border: 2px solid #000000;
+    text-align: center;
+}
+
+
+/************************************************************
+*************************Footer******************************
+*************************************************************/
+
+.footer1 {
+ 
+	padding-top: 40px;
+	padding-right: 0;
+	padding-bottom: 20px;
+	padding-left: 0;/*	border-top-width: 4px;
+	border-top-style: solid;
+	border-top-color: #003;*/
+        color: white;
+}
+
+
+
+.title-widget {
+	
+	font-size: 20px;
+	font-weight: 300;
+	line-height: 1;
+	position: relative;
+	text-transform: uppercase;
+	font-family: 'Fjalla One', sans-serif;
+	margin-top: 0;
+	margin-right: 0;
+	margin-bottom: 25px;
+	margin-left: 0;
+	padding-left: 28px;
+}
+
+.title-widget::before {
+    background-color: #ea5644;
+    content: "";
+    height: 22px;
+    left: 0px;
+    position: absolute;
+    top: -2px;
+    width: 5px;
+}
+
+
+
+.widget_nav_menu ul {
+    list-style: outside none none;
+    padding-left: 0;
+}
+
+.widget_archive ul li {
+    background-color: rgba(0, 0, 0, 0.3);
+    content: "";
+    height: 3px;
+    left: 0;
+    position: absolute;
+    top: 7px;
+    width: 3px;
+}
+
+
+.widget_nav_menu ul li {
+    font-size: 13px;
+    font-weight: 700;
+    line-height: 20px;
+	position: relative;
+    text-transform: uppercase;
+	border-bottom: 1px solid rgba(0, 0, 0, 0.05);
+    margin-bottom: 7px;
+    padding-bottom: 7px;
+	width:95%;
+}
+
+
+
+.title-median {
+    color: #636363;
+    font-size: 20px;
+    line-height: 20px;
+    margin: 0 0 15px;
+    text-transform: uppercase;
+	font-family: 'Fjalla One', sans-serif;
+}
+
+.footerp p {font-family: 'Gudea', sans-serif; }
+
+
+#social:hover {
+    			-webkit-transform:scale(1.1); 
+-moz-transform:scale(1.1); 
+-o-transform:scale(1.1); 
+			}
+			#social {
+				-webkit-transform:scale(0.8);
+                /* Browser Variations: */
+-moz-transform:scale(0.8);
+-o-transform:scale(0.8); 
+-webkit-transition-duration: 0.5s; 
+-moz-transition-duration: 0.5s;
+-o-transition-duration: 0.5s;
+			}           
+/* 
+    Only Needed in Multi-Coloured Variation 
+                                               */
+			.social-fb:hover {
+				color: #3B5998;
+			}
+			.social-tw:hover {
+				color: #4099FF;
+			}
+			.social-gp:hover {
+				color: #d34836;
+			}
+			.social-em:hover {
+				color: #f39c12;
+			}
+			.nomargin { margin:0px; padding:0px;}
+
+
+
+
+
+.footer-bottom {
+    background-color: #15224f;
+    min-height: 30px;
+    width: 100%;
+}
+.copyright {
+    color: #fff;
+    line-height: 30px;
+    min-height: 30px;
+    padding: 7px 0;
+}
+.design {
+    color: #fff;
+    line-height: 30px;
+    min-height: 30px;
+    padding: 7px 0;
+    text-align: right;
+}
+.design a {
+    color: #fff;
+}
+html{
+    margin: 0px;
+    padding: 0px;
+}
+
+.boxlogin{
+    margin: 50px auto;
+    width: 900px;
+    -webkit-border-radius: 30px;
+    -moz-border-radius: 30px;
+}
+.boxlogin2{
+    margin: 50px auto;
+    width: 1100px;
+    -webkit-border-radius: 30px;
+    -moz-border-radius: 30px;
+    
+}
+.boxlogin3{
+    margin: 50px auto;
+    width: 600px;
+    -webkit-border-radius: 30px;
+    -moz-border-radius: 30px;
+    
+}
+.boxlogin4{
+    margin: 50px auto;
+    width: 900px;
+    -webkit-border-radius: 30px;
+    -moz-border-radius: 30px;
+    
+}
+.boxlogin5{
+    margin: 20px auto;
+    width: 1000px;
+    -webkit-border-radius: 30px;
+    -moz-border-radius: 30px;
+    
+}
+
+
+input[ type="submit" ]{
+    
+    margin-top: 14px;
+}
+
+/************************************************************
+*************************Footer******************************
+*************************************************************/
+
+
